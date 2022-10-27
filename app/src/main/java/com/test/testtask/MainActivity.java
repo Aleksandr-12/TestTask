@@ -53,12 +53,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             @Override
             public void onFailure(Call<List<ListUsers>> call, Throwable t) {
-                Log.d("xxxxxxxxxxxxxxxxxxxx","");
             }
         });
         String[] strSpinner;
         int n = 0;
-        String[][] arrays = new String[0][];
+        String[][] arrays;
         int user = 0;
         int uid = 0;
         if(listUsers !=null){
